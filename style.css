@@ -1,6 +1,10 @@
 html,body{margin:0;height:100%;background:#1d2b3a;color:#cfe3d4;font-family:sans-serif;overflow:hidden}
 h1{position:absolute;top:8px;left:0;right:0;margin:0;text-align:center;font-size:1.2rem;font-weight:normal;letter-spacing:.1em;pointer-events:none}
 canvas{display:block;width:100vw;height:100vh}
-#panel{position:absolute;left:50%;bottom:14px;transform:translateX(-50%);display:flex;align-items:center;gap:10px;width:min(440px,90vw);box-sizing:border-box;padding:10px 16px;background:rgba(20,32,30,.7);border-radius:999px}
+#ui{position:absolute;left:50%;bottom:10px;transform:translateX(-50%);width:min(440px,92vw);display:flex;flex-direction:column;align-items:center;gap:6px}
+#hint{margin:0;font-size:.8rem;text-align:center;opacity:.85}
+#sound{font:inherit;font-size:.9rem;padding:6px 16px;border-radius:999px;border:1px solid #9fd3a0;background:rgba(20,32,30,.7);color:#cfe3d4;cursor:pointer}
+#sound.on{background:#3b6a4c}
+#panel{display:flex;align-items:center;gap:10px;width:100%;box-sizing:border-box;padding:6px 16px;background:rgba(20,32,30,.7);border-radius:999px}
 #panel input{flex:1;min-width:0;height:32px;accent-color:#9fd3a0}
 #windval{width:2.2em;text-align:right;font-variant-numeric:tabular-nums}
